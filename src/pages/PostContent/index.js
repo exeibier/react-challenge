@@ -1,11 +1,16 @@
 import React from 'react'
 
+import { Container, Row, Col, Image } from 'reactstrap';
+
+import Content from './Content'
+
+import './PostContent.css'
+
 export default class PostContent extends React.Component {
   render() {
     return(
-      <div className="Container">
-        <h1>Title</h1>
-        <h3>Subtitle</h3>
+      <div>
+        <Content />
       </div>
     )
   }
