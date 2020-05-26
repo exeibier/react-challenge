@@ -19,7 +19,7 @@ export default class Content extends React.Component {
   render() {
     const { clicks } = this.props
     return(
-      <Row xs="2" className="user-info">
+      <Row xs="2" className="view-info">
         <Col className="views-container">
           <Card className="view-link">
             <CardImg className="icon-img" top width="10%" src={view} alt="Card image cap"  />

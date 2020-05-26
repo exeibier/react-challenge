@@ -1,6 +1,6 @@
-.user-info {
-  width: 50%;
+.view-info {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   margin: auto;
   padding: 20px 0;
@@ -40,4 +40,16 @@
 
 .card-text {
   align-self: center;
+}
+
+
+@media (min-width: 750px){
+  .view-info {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+  }
 }
