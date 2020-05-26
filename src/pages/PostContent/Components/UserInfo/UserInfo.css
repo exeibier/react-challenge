@@ -1,9 +1,7 @@
 .user-info {
   width: 50%;
   display: flex;
-  justify-content: space-between;
-  margin: auto;
-  padding: 20px 0;
+  flex-direction: column-reverse;
 }
 
 .user-link button {
@@ -12,12 +10,6 @@
   border-style: solid;
   border-radius: 5px;
   border-color: rgb(83, 83, 155);
-}
-
-.user-info .view-button button {
-  background-color: transparent;
-  width: auto;
-  border: none;
 }
 
 .card-subtitle {
@@ -47,8 +39,28 @@
 }
 
 .user-link p {
+  width: max-content;
   padding: 0 10px;
   margin: 0;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  /* width: fit-content; */
+}
 
+
+@media (min-width: 750px){
+  .user-info {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+  }
+
+
+  
+ }
