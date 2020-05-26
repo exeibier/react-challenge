@@ -9,6 +9,12 @@
     padding:20px;
 }
 
-.log-in-head button{
-    padding: 10px 20px;
+.log-in-head .btn {
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    margin-right: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border-width: thin;
 }

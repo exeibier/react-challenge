@@ -41,31 +41,32 @@ export default class LogIn extends Component {
             <Container fluid={true}>
               <LogInHead/>
                 <Row>
-                    <Col sm='12' xl='6' className="text-center big-text">
-                      <h2>Expand your reading.</h2>
-                      <h2>Expand your mind.</h2>
+                    <Col sm='12' xl='6' className="text-center big-picture">                
+                      <div>
+                        <img src='https://miro.medium.com/max/980/1*90cu6c0u4ZL8H8ic1woZDw@2x.png'></img>
+                      </div>
                     </Col>  
-                    <Col sm='12' xl='6'>
+                    <Col sm='12' xl='6' className='form-wrap'>
                     <h2>Welcome back.</h2>
                       <p>Sign in to get personalized story recommendations, follow authors and topics you love, and interact with stories.</p>
                       <div className='form'>
-                      <form onSubmit={this.handleSubmit}>
-                          <input
-                              value = {email}
-                              name={'email'}
-                              onChange={this.handleInput}
-                              type={"email"}
-                              placeholder={"Email"}
-                          />
-                          <input
-                              value={password}
-                              name={'password'}
-                              onChange={this.handleInput}                    
-                              type={"password"}
-                              placeholder={"Password"}
-                          />
-                          <button type="submit">LogIn</button>
-                      </form>                     
+                        <form onSubmit={this.handleSubmit}>
+                            <input
+                                value = {email}
+                                name={'email'}
+                                onChange={this.handleInput}
+                                type={"email"}
+                                placeholder={"Email"}
+                            />
+                            <input
+                                value={password}
+                                name={'password'}
+                                onChange={this.handleInput}                    
+                                type={"password"}
+                                placeholder={"Password"}
+                            />
+                            <button type="submit">LogIn</button>
+                        </form>                     
                       </div>      
                     </Col>
                 </Row>

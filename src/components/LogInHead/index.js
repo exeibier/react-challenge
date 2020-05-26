@@ -10,7 +10,9 @@ import './LogInHead.css'
         <div>
           <div className='log-in-head'>
             <a><img src='https://miro.medium.com/max/1090/1*TGH72Nnw24QL3iV9IOm4VA.png'></img></a>
-            <button>log In</button> 
+            <div>
+              <button type='button' className='btn'>log In</button> 
+            </div>
           </div>
         </div>
     )
