@@ -17,11 +17,12 @@ export default class PostContent extends React.Component {
       Post: {},
     }
   }
-
+ 
   async componentDidMount() {
-    await fetch("http://localhost:8082/posts/5eaca1f6b442905ac3bb1b18")
+    await fetch("medium-api-post.mybluemix.net/articles/5eacab4b9091998421035ea0")
     .then(response => response.json())
     .then(({data}) => {
+      console.log(data)
       var post = data.post
       this.setState({
         Post: post
@@ -42,6 +43,7 @@ export default class PostContent extends React.Component {
       estimatedReadTime,
       clicks
     } = this.state.Post
+    console.log(title, subtitle)
 
     return(
       <div>
