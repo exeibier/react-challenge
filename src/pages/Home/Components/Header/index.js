@@ -38,7 +38,7 @@ export default class Header extends Component{
                 </div>
                 <button type="button" className="btn-upgrade">Upgrade</button>
                 <div className="user-avatar">                         
-                    <img src="../../../../public/perfil.png" />
+                    <img src="https://cdn-images-1.medium.com/fit/c/32/32/0*2w7p1iPyGn0HqLeh.jpg" class="avatar-image avatar-image--icon"/>
                 </div>
             </div>
         </div> 

@@ -1,0 +1,75 @@
+.ContainerPrincipals{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.PrincipalPost{
+    justify-content: start;
+    width: 45%;
+    display: block;
+}
+.PostsCentral{
+    justify-content: center;
+    width: 30%;
+    margin-left: 2%;
+}
+.SecondaryPost{
+    justify-content: end;
+    width: 25%;
+    margin-left: 2%;
+}
+li{
+    list-style: none;
+    height: 80px;
+    margin-bottom: 2%;
+}
+.card-img-principal{
+    width: -webkit-fill-available;
+    height: fit-content;
+}
+.card-container-principal{
+   width: 80%;
+   text-align: left;
+   margin-left: 20%;
+}
+.card-container-secondary{
+    width: 90%;
+    text-align: left;
+    margin-right: 10%;
+ }
+.markers{
+    display: flex;
+    justify-content: space-between;
+}
+.ContainerCard{
+    display: flex;
+    height: 120px;
+}
+.article-card-title{
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 2%;
+}
+.article-card-autor{
+    font-size: 8px;
+    text-align: left;
+    margin-left: 1%;
+}
+.article-card-date-publication{
+    font-size: 8px;
+    color: #6c757d;
+    text-align: left;
+    margin-left: 2%;
+}
+a{
+    color: rgba(0,0, 0, 0.84);
+}
+.icon-star {
+    color: rgba(0,0, 0, 0.84);
+    font-size: 8px;
+}
+article{
+    margin-bottom: 2px;
+}
+
