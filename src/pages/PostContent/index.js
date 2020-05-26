@@ -7,6 +7,7 @@ import ImgPost from './Components/ImgPost'
 import Content from './Components/Content'
 import ViewNav from './Components/ViewNav'
 import Footer from '../../components/Footer'
+import LogIn from '../LogIn'
 
 import './PostContent.css'
 
@@ -33,6 +34,7 @@ export default class PostContent extends React.Component {
 
 
   render() {
+    const {isUserLogedIn} = this.props
     const { 
       title,
       subtitle,
@@ -47,21 +49,30 @@ export default class PostContent extends React.Component {
 
     return(
       <div>
-        <Header />
-        <TitlePost 
-        title={title}
-        subtitle={subtitle}/>
-        <UserInfo 
-        author={author}
-        estimatedReadTime={estimatedReadTime}/>
-        <ImgPost 
-        image={image}/>
-        <Content 
-        content={content}/>
-        <ViewNav 
-        clicks={clicks}/>
-        <Footer />
+        {
+          isUserLogedIn ? (
+            <div>
+            <Header />
+            <TitlePost 
+            title={title}
+            subtitle={subtitle}/>
+            <UserInfo 
+            author={author}
+            estimatedReadTime={estimatedReadTime}/>
+            <ImgPost 
+            image={image}/>
+            <Content 
+            content={content}/>
+            <ViewNav 
+            clicks={clicks}/>
+            <Footer />
+          </div>
+          ) : (
+            <LogIn/>
+          )
+        }
       </div>
+     
     )
   }
 }

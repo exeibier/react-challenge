@@ -1,21 +1,43 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
-import{
+import {
   BrowserRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
-
+  Link
+} from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home'
 import PostContent from './pages/PostContent'
 
+//Pages
+import LogIn from './pages/LogIn'
+
 export default class App extends Component {
   constructor(props){
     super(props)
-    this.state = {
+    this.state= {
+      isUserLogedIn: false
+    }
+    this.logOut = this.logOut.bind(this)
+  }
+
+  componentWillMount(){
+    const authToken = localStorage.getItem('authTokenUser')
+    if (authToken){
+      this.setState({
+        isUserLogedIn: true
+      })
     }
   }
+
+  logOut () {
+    localStorage.removeItem('autTokenUser')
+    this.setState({
+      isUserLogedIn: false
+    })
+  }
+
   render () {
     const { isUserLogedIn } = this.state
     
@@ -23,15 +45,20 @@ export default class App extends Component {
       <Router>
         <div className="App">
           <Switch>
+          <Route exact path="/">
+              <LogIn />
+            </Route>
             <Route exact path="/posts">
-              <Home />
+              <Home LogOut={this.logOut} isUserLogedIn={isUserLogedIn} />
             </Route>
             <Route exact path="/post-content">
-              <PostContent />
+              <PostContent isUserLogedIn={isUserLogedIn} />
             </Route>
           </Switch>
         </div>
       </Router>
     )
   }
+ 
 }
+

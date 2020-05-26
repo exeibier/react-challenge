@@ -1,0 +1,46 @@
+.login-component h2 {
+    font-family: 'Merriweather', serif;
+}
+
+.big-picture img{
+    width: 85%;
+}
+
+.form-wrap {
+    padding-top: 150px;    
+}
+
+.form-wrap h2{
+    font-size: 55px;
+}
+
+.form-wrap p {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.form-wrap input{
+    display: block;
+    margin: 15px auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.form-wrap input:focus{
+    outline: none;
+}
+
+.form-wrap .form {
+    padding: 50px;
+    border: #aaaa 1px solid;
+    border-radius: 15px;
+}
+
+.form-wrap button {
+    margin-top: 30px;
+    color: #ffffff;
+    background: rgb(3, 168, 124);
+    border-color: rgb(3, 168, 124); ;
+    border-radius: 5px;
+    padding: 20px 60px;
+}
