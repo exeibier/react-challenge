@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Header from './Components/Header'
+import Header from '../../components/Header'
 import Menu from './Components/Menu'
 import PrincipalPosts from './Components/PrincipalsPosts'
 import HideContent from './Components/HideContent'
 import Posts from './Components/Posts'
 import RankingPost from './Components/RankingPost'
-import Footer from './Components/Footer'
+import Footer from '../../components/Footer'
 import { Container, Row, Col } from 'reactstrap'
 
 function Home(){
