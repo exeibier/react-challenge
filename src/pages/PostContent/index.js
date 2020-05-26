@@ -1,10 +1,12 @@
 import React from 'react'
 
+import Header from '../../components/Header'
 import TitlePost from './Components/TitlePost'
 import UserInfo from './Components/UserInfo'
 import ImgPost from './Components/ImgPost'
 import Content from './Components/Content'
 import ViewNav from './Components/ViewNav'
+import Footer from '../../components/Footer'
 
 import './PostContent.css'
 
@@ -43,6 +45,7 @@ export default class PostContent extends React.Component {
 
     return(
       <div>
+        <Header />
         <TitlePost 
         title={title}
         subtitle={subtitle}/>
@@ -55,6 +58,7 @@ export default class PostContent extends React.Component {
         content={content}/>
         <ViewNav 
         clicks={clicks}/>
+        <Footer />
       </div>
     )
   }
