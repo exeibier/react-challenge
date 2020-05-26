@@ -2,7 +2,6 @@ import React from 'react'
 import './Home.css'
 import Header from './Components/Header'
 import Menu from './Components/Menu'
-import PostPrincipal from './Components/PostPrincipal'
 
 function Home(){
     return(
@@ -10,7 +9,6 @@ function Home(){
           
             <Header/>
             <Menu/>
-            <PostPrincipal/>
             <div className="containerSeeEditors">
                 <div className="containerLink">
                 <a className="link">SEE EDITOR’S PICKS</a>
