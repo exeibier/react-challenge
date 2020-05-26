@@ -22,9 +22,10 @@ export default class App extends Component {
       <Router>
         <div className="App">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/posts">
               <Home />
             </Route>
+
           </Switch>
         </div>
       </Router>
