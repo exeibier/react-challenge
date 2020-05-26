@@ -5,8 +5,10 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import './App.css'
+import Home from './pages/Home'
+import PostContent from './pages/PostContent'
 
-import './App.css';
 //Pages
 import LogIn from './pages/LogIn'
 
@@ -27,19 +29,26 @@ export default class App extends Component {
     }
   }
 
-  render(){
-    const {isUserLogedIn} = this.state
+  render () {
+    const { isUserLogedIn } = this.state
+    
     return (
-      <div className="App">
-        <Router>
+      <Router>
+        <div className="App">
           <Switch>
-            <Route exact path='/login'>
-              <LogIn/>
+          <Route exact path="/">
+              <LogIn />
+            </Route>
+            <Route exact path="/posts">
+              <Home />
+            </Route>
+            <Route exact path="/post-content">
+              <PostContent />
             </Route>
           </Switch>
-        </Router>
-      </div>
-    );
+        </div>
+      </Router>
+    )
   }
  
 }

@@ -1,0 +1,51 @@
+.Container{
+  display: block;
+}
+.containerSeeEditors{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link{
+  color:#03A87C;
+  padding-right: 0;
+  
+}
+.separator{
+  border-style: solid;
+  border-width: thin;
+  border-color: rgba(0,0,0,.4);
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-device-width: 767px) {
+    .brand-lg {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-device-width: 1210px) {
+    .mainBarLeft {
+      margin-left: 150px;
+    }
+    .mainBarRight {
+      margin-right: 150px;
+    }
+  }
+  
+  @media only screen and (min-device-width: 768px) {
+    /* For desktop: */
+    .brand-xs {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-device-width: 1440px) {
+    .containerSeeEditors{
+      justify-content: flex-end;
+    }
+
+  }
+  

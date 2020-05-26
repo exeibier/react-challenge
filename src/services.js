@@ -15,5 +15,31 @@ function LogIn(data, callback) {
           callback(data)
       }) ;
   }
+  function GetPosts(token) {
+    const URL = `${URL_BASE}posts`;
+    return fetch(URL, {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+        "Authorization": token
+      },
+      mode: "cors",
+    })
+  }
+  
+  function GetPost(token, id) {
+    const URL = `${URL_BASE}posts/${id}`;
+    return fetch(URL, {
+      method: "GET",
+      headers: {
+        "Content-type": "application/json",
+        "Authorization": token
+      },
+      mode: "cors",
+    })
+  }
+  
+  export { LogIn, GetPosts, GetPost };
 
-  export { LogIn };
+
+
