@@ -41,12 +41,12 @@ export default class HideContent extends Component {
             return (<div className='ContainerCard'>
                 <div className='justify-content-start card-container'>
                     <p className='card-medium' key={key}>POST ON MEDIUM </p>
-                    <h1 className='card-title' title={title}> </h1>
-                    <p className='card-content' description={description}></p>
-                    <a href='#'><small className='card-author' author={author} > in Thought Catalog</small></a>
+        <h1 className='card-title' title={title}> {title}</h1>
+                    <p className='card-content' description={description}>{description}</p>
+        <a href='#'><small className='card-author' author={author} > {author}in Thought Catalog</small></a>
                     <div>
-                        <span> <small className='card-date' date={date}></small></span>
-                        <small className='card-read' estimatedReadTime={estimatedReadTime}></small>
+        <span> <small className='card-date' date={date}> {date}</small></span>
+        <small className='card-read' estimatedReadTime={estimatedReadTime}>{estimatedReadTime}</small>
                         <i className="far fa-star"></i>
                         <i className="far fa-bookmark"></i>
                         <i className="fas fa-ellipsis-h"></i>
