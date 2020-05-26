@@ -1,21 +1,31 @@
 import React, { Component } from "react";
 // External Packages
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Pages
-import Posts from './pages/Home/Components/Posts'
-//import CurrencyConverter from './pages/CurrencyConverter'
-// CSS
+import './App.css'
+import Home from './pages/Home'
+
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"/>
-    
-      <Posts
-      />
-    </div>
-  );
+
+export default class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            
+          </Switch>
+        </div>
+      </Router>
+
+    );
+  }
 }
 
-export default App;
