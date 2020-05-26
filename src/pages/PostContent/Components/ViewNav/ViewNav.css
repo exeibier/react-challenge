@@ -1,0 +1,43 @@
+.user-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.icons-container {
+  /* width: 30%; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.icons-container button :hover {
+  cursor: pointer;
+}
+
+
+.views-container {
+  width: 50%;
+}
+
+.view-link {
+  display: flex;
+}
+
+.view-link p {
+  padding: 0 10px;
+}
+
+.icon-img {
+  width: 4vw;
+}
+
+.card-text {
+  align-self: center;
+}
