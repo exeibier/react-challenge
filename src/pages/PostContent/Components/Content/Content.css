@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.card {
+  flex-direction: row;
+}
+
 .header-post {
   width: 80%;
   margin: auto;
@@ -28,7 +32,7 @@
 .icons-container {
   /* width: 30%; */
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .icons-container button {
@@ -44,11 +48,17 @@
   display: flex;
   height: min-content;
   align-items: initial;
+  border: none;
+}
+
+.user-link .card-body {
+  padding: 0;
 }
 
 .user-link img {
   padding: 2px;
-  height: min-content;
+  height: 32px;
+  width: 32px;
   border-style: ridge;
   border-color: rgb(156, 204, 156);
   border-radius: 15px;
@@ -61,6 +71,8 @@
 
 .card-subtitle {
   font-size: smaller;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .user-link button {
@@ -87,4 +99,8 @@
 
 .view-link p {
   padding: 0 10px;
+}
+
+.icon-img {
+  width: 4vw;
 }

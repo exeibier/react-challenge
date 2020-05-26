@@ -8,6 +8,7 @@ import{
 
 import './App.css'
 import Home from './pages/Home'
+import PostContent from './pages/PostContent'
 
 export default class App extends Component {
   constructor(props){
@@ -24,6 +25,9 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route exact path="/post-content">
+              <PostContent />
             </Route>
           </Switch>
         </div>

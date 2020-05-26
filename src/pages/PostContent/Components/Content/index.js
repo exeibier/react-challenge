@@ -33,7 +33,7 @@ export default class Content extends React.Component {
               <CardBody>
                 <div className="user-link">
                   <CardText>UserName</CardText>
-                  <Button >Follow</Button>
+                  <button>Follow</button>
                 </div>
                 <CardSubtitle>May 25 · 5 min read</CardSubtitle>
               </CardBody>
@@ -59,7 +59,7 @@ export default class Content extends React.Component {
         </Row>
         <Row className="info-post">
           <Col>
-            <Card>
+            <card>
               <CardImg top width="90%" src="https://miro.medium.com/max/2000/1*6RYGpxj37Kzp_7q2ycMKQg.jpeg" alt="Card image cap"  />
               <CardBody className="text-content">
                 <CardText>Something is happening in the world that we should pay attention to. Sadly we are ignoring it and the many warnings it represents. There is a country that may do a worse job and have a worse outcome addressing Covid-19 than the US — Brazil. It’s not getting better but is likely to get worse and worse. Cuando termines de leer el artículo, esto es con lo que deberías quedarte:
@@ -81,7 +81,7 @@ Vamos a ello.
               <Row xs="2" className="user-info">
                 <Col className="views-container">
                   <Card className="view-link">
-                    <CardImg top width="10%" src={view} alt="Card image cap"  />
+                    <CardImg className="icon-img" top width="10%" src={view} alt="Card image cap"  />
                     <CardText>nº views</CardText>
                   </Card>
                 </Col>
@@ -103,7 +103,7 @@ Vamos a ello.
                   </div>
                 </Col>
               </Row>
-            </Card>
+            </card>
           </Col>
         </Row>
       </Container>
