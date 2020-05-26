@@ -1,0 +1,14 @@
+.log-in-head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.log-in-head img{
+    width: 30%;
+    padding:20px;
+}
+
+.log-in-head button{
+    padding: 10px 20px;
+}

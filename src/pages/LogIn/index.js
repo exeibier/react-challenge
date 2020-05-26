@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import { Row, Container, Col } from 'reactstrap';
 
+import LogInHead from '../../components/LogInHead'
+
 //Services
 import { LogIn as LogInService} from '../../services'
 
@@ -37,10 +39,16 @@ export default class LogIn extends Component {
       const {email, password} = this.state
         return(
             <Container fluid={true}>
+              <LogInHead/>
                 <Row>
-                    <Col sm='12' xl='6' className="text-center form">
-                      <h2>Welcome back.</h2>
-                      <p>Sign in to get personalized story recommendations, follow authors and topics you love, and interact with stories.</p>      
+                    <Col sm='12' xl='6' className="text-center big-text">
+                      <h2>Expand your reading.</h2>
+                      <h2>Expand your mind.</h2>
+                    </Col>  
+                    <Col sm='12' xl='6'>
+                    <h2>Welcome back.</h2>
+                      <p>Sign in to get personalized story recommendations, follow authors and topics you love, and interact with stories.</p>
+                      <div className='form'>
                       <form onSubmit={this.handleSubmit}>
                           <input
                               value = {email}
@@ -57,10 +65,8 @@ export default class LogIn extends Component {
                               placeholder={"Password"}
                           />
                           <button type="submit">LogIn</button>
-                      </form>
-                    </Col>
-                    <Col sm='12' xl='6'>
-                      <img src='https://picsum.photos/700/600'/>
+                      </form>                     
+                      </div>      
                     </Col>
                 </Row>
             </Container>
