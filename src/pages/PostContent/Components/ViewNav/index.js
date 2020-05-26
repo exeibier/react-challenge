@@ -18,6 +18,7 @@ export default class Content extends React.Component {
   }
   render() {
     const { clicks } = this.props
+    console.log(clicks)
     return(
       <Row xs="2" className="view-info">
         <Col className="views-container">

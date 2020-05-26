@@ -10,7 +10,6 @@ export default class HideContent extends Component {
  
     componentDidMount() {
         fetch("https://medium-api-post.mybluemix.net/articles")
-        //fetch("http://localhost:8080/articles")
             .then(response => response.json())
             .then(({ data }) => {
                 console.log(data.articles)

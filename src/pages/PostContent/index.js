@@ -20,11 +20,11 @@ export default class PostContent extends React.Component {
   }
  
   async componentDidMount() {
-    await fetch("medium-api-post.mybluemix.net/articles/5eacab4b9091998421035ea0")
+    await fetch("https://medium-api-post.mybluemix.net/articles/5ecdbe86d4d6ac0086ea90e6")
     .then(response => response.json())
-    .then(({data}) => {
+    .then(({ data }) => {
       console.log(data)
-      var post = data.post
+      var post = data.article
       this.setState({
         Post: post
       })
@@ -37,15 +37,16 @@ export default class PostContent extends React.Component {
     const {isUserLogedIn} = this.props
     const { 
       title,
-      subtitle,
+      // subtitle,
       image,
-      content,
-      references,
+      description,
+      // references,
       author,
       estimatedReadTime,
-      clicks
+      date,
+      views
     } = this.state.Post
-    console.log(title, subtitle)
+    console.log(title)
 
     return(
       <div>
@@ -55,16 +56,17 @@ export default class PostContent extends React.Component {
             <Header />
             <TitlePost 
             title={title}
-            subtitle={subtitle}/>
+            subtitle="Content of Medium"/>
             <UserInfo 
             author={author}
-            estimatedReadTime={estimatedReadTime}/>
+            estimatedReadTime={estimatedReadTime}
+            date={date}/>
             <ImgPost 
             image={image}/>
             <Content 
-            content={content}/>
+            content={description}/>
             <ViewNav 
-            clicks={clicks}/>
+            clicks={views}/>
             <Footer />
           </div>
           ) : (

@@ -21,7 +21,7 @@ export default class Content extends React.Component {
   }
 
   render() {
-    const { author, estimatedReadTime} = this.props
+    const { author, estimatedReadTime, date } = this.props
     return(
       <Row className="user-info">
           <Col>
@@ -32,7 +32,7 @@ export default class Content extends React.Component {
                   <CardText>{author}</CardText>
                   <button>Follow</button>
                 </div>
-                <CardSubtitle>May 25 · {estimatedReadTime} Read time</CardSubtitle>
+                <CardSubtitle>{date} · {estimatedReadTime} Read time</CardSubtitle>
               </CardBody>
             </Card>
           </Col>
