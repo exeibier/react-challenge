@@ -40,7 +40,7 @@ export default class LogIn extends Component {
         return(
             <Container fluid={true}>
               <LogInHead/>
-                <Row>
+                <Row className='login-component'>
                     <Col sm='12' xl='6' className="text-center big-picture">                
                       <div>
                         <img src='https://miro.medium.com/max/980/1*90cu6c0u4ZL8H8ic1woZDw@2x.png'></img>
