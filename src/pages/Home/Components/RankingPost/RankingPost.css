@@ -1,0 +1,29 @@
+/*popular*/
+
+    .ranking-post{
+      color: rgba(0,0,0,.15);
+      font-size: 34px;
+      font-weight: 400;
+      margin-right: 25px;
+      margin-top: -10px;
+    }
+   .ranking-list{
+       list-style: none;
+   }
+    .links-footer{
+      font-size: 16px;
+      margin-top: 50px;
+    }
+  .link-a{
+      color:rgba(0,0,0,.54);
+      margin-left:15px ;
+  }
+  .btn-learn{
+      background-color: rgb(1, 168, 124);
+      color: whitesmoke;
+  }
+  .title-experience{
+      font-size: 29px;
+      font-weight: bolder;
+      line-height: 32px;
+  }
