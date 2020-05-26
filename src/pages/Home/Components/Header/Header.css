@@ -1,0 +1,68 @@
+  .main-bar {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 65px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    vertical-align: middle;
+  }
+  
+  .mainBarLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  
+  .mainBarRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .mainBarRight .svgIcon-use {
+    cursor: pointer;
+    fill: gray;
+    margin-right: 15px;
+  }
+  
+  .mainBarRight .svgIcon-use :hover {
+    fill: black;
+  }
+  
+  .mainBarRight .btn {
+    margin-right: 15px;
+  }
+  
+  .btn {
+    color: black;
+    background-color: white;
+  }
+  
+  .btn:hover, .btn:focus, .btn:active, .btn.active {
+    color: black;
+    background-color: white;
+    border-color: black;
+  }
+ .btn-upgrade{
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    margin-right: 5px;
+    padding: 2%;
+    border-radius: 5px;
+    border-width: thin;
+ }
+ .btn-upgrade:hover{
+     color: rgb(255, 255,255);
+     background-color: black;
+ }
