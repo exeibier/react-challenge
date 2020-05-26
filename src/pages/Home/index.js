@@ -12,7 +12,7 @@ import { Container, Row, Col } from 'reactstrap'
 function Home(){
     return(
         <div className="Container">
-          
+            
             <Header/>
             <Menu/>
             <PrincipalPosts/>

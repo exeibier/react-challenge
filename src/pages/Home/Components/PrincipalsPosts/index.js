@@ -27,69 +27,68 @@ export default class PrincipalsPosts extends Component{
                 </div>
             </div>
             <div className="PostsCentral">
-                
-                        <article className="d-flex">
-                            <div className="justify-content-start">
-                                <a href=""><img src="https://picsum.photos/seed/picsum/100/100" class="" alt=""/></a>
+                <article className="d-flex">
+                    <div className="justify-content-start">
+                        <a href=""><img src="https://picsum.photos/seed/picsum/100/100" class="" alt=""/></a>
+                    </div>
+                    <div className="justify-content-end">
+                        <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
+                        <div className="article-card-data d-flex justify-content-between">
+                            <div>
+                                <p> 
+                                    <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
+                                    <br/>
+                                    <span
+                                        className="article-card-date-publication justify-space-between">March 26 . 2 min read
+                                    </ span>
+                                </p>
                             </div>
-                            <div className="justify-content-end">
-                                <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
-                                <div className="article-card-data d-flex justify-content-between">
-                                    <div>
-                                        <p> 
-                                            <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
-                                            <br/>
-                                            <span
-                                                className="article-card-date-publication justify-space-between">March 26 . 2 min read
-                                            </ span>
-                                        </p>
-                                    </div>
-                                    <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
-                                </div>
+                            <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                </article>
+            
+                <article className="d-flex">
+                    <div className="justify-content-start">
+                        <a href=""><img src="https://picsum.photos/seed/picsum/100/100" class="" alt=""/></a>
+                    </div>
+                    <div className="justify-content-end">
+                        <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
+                        <div className="article-card-data d-flex justify-content-between">
+                            <div>
+                                <p> 
+                                    <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
+                                    <br/>
+                                    <span
+                                        className="article-card-date-publication justify-space-between">March 26 . 2 min read
+                                    </ span>
+                                </p>
                             </div>
-                        </article>
-                   
-                        <article className="d-flex">
-                            <div className="justify-content-start">
-                                <a href=""><img src="https://picsum.photos/seed/picsum/100/100" class="" alt=""/></a>
+                            <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                </article>
+            
+                <article className="d-flex">
+                    <div className="justify-content-start">
+                        <img src="https://picsum.photos/100/100" className="img-article" alt=""/>
+                    </div>
+                    <div className="justify-content-end">
+                        <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
+                        <div className="article-card-data d-flex justify-content-between">
+                            <div>
+                                <p> 
+                                    <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
+                                    <br/>
+                                    <span
+                                        className="article-card-date-publication justify-space-between">March 26 . 2 min read
+                                    </ span>
+                                </p>
                             </div>
-                            <div className="justify-content-end">
-                                <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
-                                <div className="article-card-data d-flex justify-content-between">
-                                    <div>
-                                        <p> 
-                                            <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
-                                            <br/>
-                                            <span
-                                                className="article-card-date-publication justify-space-between">March 26 . 2 min read
-                                            </ span>
-                                        </p>
-                                    </div>
-                                    <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
-                                </div>
-                            </div>
-                        </article>
-                   
-                        <article className="d-flex">
-                            <div className="justify-content-start">
-                                <img src="https://picsum.photos/100/100" className="img-article" alt=""/>
-                            </div>
-                            <div className="justify-content-end">
-                                <p className="article-card-title">COVID-19 Vaccine May Be Avaible in Fall</p>
-                                <div className="article-card-data d-flex justify-content-between">
-                                    <div>
-                                        <p> 
-                                            <a href="" className="article-card-autor">Jesse Smith in Marker</a> 
-                                            <br/>
-                                            <span
-                                                className="article-card-date-publication justify-space-between">March 26 . 2 min read
-                                            </ span>
-                                        </p>
-                                    </div>
-                                    <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
-                                </div>
-                            </div>
-                        </article>
+                            <a href="" className="align-self-center ellipsis"><i class="fas fa-ellipsis-h"></i></a>
+                        </div>
+                    </div>
+                </article>
                     
             </div>
             <div className="SecondaryPost">
