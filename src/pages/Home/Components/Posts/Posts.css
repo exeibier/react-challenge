@@ -55,6 +55,7 @@ color:#6c757d;
 }
 .ContainerCard{
     display: flex;
+    margin-bottom: 60px;
 }
   
 
