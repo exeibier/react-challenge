@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.header-post {
+  width: 80%;
+  margin: auto;
+}
+
+.header-post h3{
+  color: gray;
+}
+

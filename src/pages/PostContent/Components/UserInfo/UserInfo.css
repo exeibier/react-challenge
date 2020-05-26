@@ -1,0 +1,54 @@
+.user-info {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.user-link button {
+  background-color: transparent;
+  height: min-content;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(83, 83, 155);
+}
+
+.user-info .view-button button {
+  background-color: transparent;
+  width: auto;
+  border: none;
+}
+
+.card-subtitle {
+  font-size: smaller;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.user-link {
+  display: flex;
+  height: min-content;
+  align-items: initial;
+  border: none;
+}
+
+.user-link .card-body {
+  padding: 0;
+}
+
+.user-link img {
+  padding: 2px;
+  height: 32px;
+  width: 32px;
+  border-style: ridge;
+  border-color: rgb(156, 204, 156);
+  border-radius: 15px;
+}
+
+.user-link p {
+  padding: 0 10px;
+  margin: 0;
+}
+
+
