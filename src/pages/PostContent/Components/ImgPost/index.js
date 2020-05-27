@@ -10,7 +10,7 @@ export default class ImgPost extends React.Component {
   render() {
     const { image } = this.props
     return(
-      <CardImg top width="90%" src={image} alt="Card image cap"  />
+      <CardImg top width="80%" src={image} alt="Card image cap"  />
     )
   } 
 }

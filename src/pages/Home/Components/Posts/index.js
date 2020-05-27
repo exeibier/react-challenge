@@ -7,10 +7,9 @@ export default class HideContent extends Component {
             posts: []
         }
     };
-
+ 
     componentDidMount() {
         fetch("https://medium-api-post.mybluemix.net/articles")
-
             .then(response => response.json())
             .then(({ data }) => {
                 console.log(data.articles)
