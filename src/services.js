@@ -11,8 +11,8 @@ function LogIn(data, callback) {
       mode: "cors",
     })
       .then(response => response.json())
-      .then(data => {
-          callback(data)
+      .then(data =>{
+        callback(data)
       }) ;
   }
   function GetPosts(token) {

@@ -4,6 +4,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Link
 } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home'
@@ -18,6 +19,7 @@ export default class App extends Component {
     this.state= {
       isUserLogedIn: false
     }
+    this.logOut = this.logOut.bind(this)
   }
 
   componentWillMount(){
@@ -27,6 +29,13 @@ export default class App extends Component {
         isUserLogedIn: true
       })
     }
+  }
+
+  logOut () {
+    localStorage.removeItem('autTokenUser')
+    this.setState({
+      isUserLogedIn: false
+    })
   }
 
   render () {
@@ -40,10 +49,10 @@ export default class App extends Component {
               <LogIn />
             </Route>
             <Route exact path="/posts">
-              <Home />
+              <Home LogOut={this.logOut} isUserLogedIn={isUserLogedIn} />
             </Route>
             <Route exact path="/post-content">
-              <PostContent />
+              <PostContent isUserLogedIn={isUserLogedIn} />
             </Route>
           </Switch>
         </div>
