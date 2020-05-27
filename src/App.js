@@ -32,7 +32,7 @@ export default class App extends Component {
   }
 
   logOut () {
-    localStorage.removeItem('autTokenUser')
+    localStorage.removeItem('authTokenUser')
     this.setState({
       isUserLogedIn: false
     })
@@ -49,7 +49,7 @@ export default class App extends Component {
               <LogIn />
             </Route>
             <Route exact path="/posts">
-              <Home LogOut={this.logOut} isUserLogedIn={isUserLogedIn} />
+              <Home logOut={this.logOut} isUserLogedIn={isUserLogedIn} />
             </Route>
             <Route exact path="/post-content">
               <PostContent isUserLogedIn={isUserLogedIn} />
